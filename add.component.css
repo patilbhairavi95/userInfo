@@ -1,0 +1,79 @@
+/* Centering the form */
+body {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;  /* Centers vertically */
+  height: 100vh;  /* Full height of viewport */
+  background-color: #f8f9fa;  /* Light background */
+  margin: 0;
+}
+
+/* Form container */
+.container {
+  max-width: 600px;  /* Restrict width for a clean look */
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Labels */
+.form-group label {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Input and select styles */
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+
+/* Focus effect */
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+      padding: 20px;
+      align-items: flex-start; /* Prevents overflow on smaller screens */
+  }
+
+  .container {
+      max-width: 100%;
+  }
+}
